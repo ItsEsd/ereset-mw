@@ -56,7 +56,9 @@ background-color: #455eee;
 padding:6px;
 cursor: pointer
 }
-
+button:disabled{
+    cursor: not-allowed;
+}
 /*///////////////////////////////////  */
 .rstmodule{
 background-color: #fff;
