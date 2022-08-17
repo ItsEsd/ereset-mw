@@ -36,7 +36,6 @@ else{
 
   function sendEmail() {
     var k =Math.random().toString(26).substring(2, 6) + Math.random().toString(26).substring(2, 6);
-    console.log(k)
     var mailat =  document.getElementById('mailrepass').value;
     document.getElementById('vercodepre').value = k;
       Email.send({
@@ -100,7 +99,6 @@ else{
         method: "GET",
         dataType: "jsonp"
       });
-      console.log(urlp);
   });
   
   
