@@ -22,7 +22,7 @@ repassonest.addEventListener('submit', (event) => {
       document.getElementById("checkemidst").style.display = "none";
       var k =Math.random().toString(26).substring(2, 6) + Math.random().toString(26).substring(2, 6);
       document.getElementById('vercodestprest').value = k;
-      sendEmail();
+      sendEmailst();
       document.getElementById("loader-fpst").style.visibility = "hidden";
     }
     else{
@@ -34,7 +34,7 @@ repassonest.addEventListener('submit', (event) => {
       }, 5000);
     }
   }
-  function sendEmail() {
+  function sendEmailst() {
     var k =Math.random().toString(26).substring(2, 6) + Math.random().toString(26).substring(2, 6);
     var mailat =  document.getElementById('mailrepassst').value;
     document.getElementById('vercodestprest').value = k;
@@ -48,17 +48,17 @@ repassonest.addEventListener('submit', (event) => {
           .then(function (message) {
 if(message=="OK"){
   $("#resetpst_two").show();
-  $("#resetpst_one").fadeOut();
- document.getElementById('checkemidst-2').style.display= 'block';
-  document.getElementById('checkemidst-2').innerHTML= 'Verification code send to your email.';
+  $("#resetpst_one").hide();
+ document.getElementById('checkemidst-2st').style.display= 'block';
+  document.getElementById('checkemidst-2st').innerHTML= 'Verification code send to your email.';
   setTimeout(function() {
-    jQuery('#checkemidst').fadeOut();
+    jQuery('#checkemidst-2st').fadeOut();
   }, 10000);
 
 }
 else{
-  document.getElementById('checkemidst-2').style.display= 'block';
-  document.getElementById('checkemidst-2').innerHTML= 'Contact Mastro Desk: '+'<a class="veremfalse" href="mailto:mail@mastrowall.com">Send Mail</a>';
+  document.getElementById('checkemidst-2st').style.display= 'block';
+  document.getElementById('checkemidst-2st').innerHTML= 'Contact Mastro Desk: '+'<a class="veremfalse" href="mailto:mail@mastrowall.com">Send Mail</a>';
 }
           
           });
@@ -74,7 +74,7 @@ else{
       }
     });
   
-  function verfycode(){
+  function verfycodest(){
    var verc = $('#vercodest').val();
    var prec = $('#vercodestprest').val();
    if(verc == prec){
