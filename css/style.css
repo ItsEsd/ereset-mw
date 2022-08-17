@@ -17,6 +17,9 @@ color:white;
 padding:5px;
 padding-top:7px;
 }
+#title-head a{
+    text-decoration: none;
+}
 .entitle{
 float:right;
 font-size: 20px;
