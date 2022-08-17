@@ -1,0 +1,44 @@
+<section>
+    <div class="rstmodule" id="resetpst" align="center">
+    <div id="resetpst_one" class="repassst">
+      <h5 style="text-align: left;">Reset Password</h5><hr>
+    <form id="repassonest" target="hdnfrm">
+      <input type="email" class="form-control" placeholder="Enter registered email" id="mailrepassst" required/><br/>
+      <input type="submit" class="btn btn-outline-dark" value="Continue >>"/>
+      <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetpst').slideUp('fast');">
+     
+    </form>
+    </div>
+    <div id="resetpst_two"class="repassst">
+      <h5 style="text-align: left;">Reset Password</h5><hr>
+      <form id="repasstwost" target="hdnfrm">
+        <input type="text" class="form-control" placeholder="Verification Code" id="vercodest" oninput="verfycode();" required/><br/>
+        <input type="submit" class="btn btn-outline-dark" id="verconfirmst" value="Continue >>" onclick="$('#resetpst_two').slideUp('fast');$('#resetpst_three').slideDown('fast');" disabled/>
+        <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetpst').slideUp('fast');">
+      </form>
+    
+    </div>
+    <div id="resetpst_three"class="repassst">
+      <h5 style="text-align: left;">Reset Password</h5><hr>
+      <form id="repassthreest" target="hdnfrm">
+        <input type="password" class="form-control" placeholder="New Password" id="passwordnewst" required/><br/>
+        <span id="messagenewst" style="float:right;margin-right:10px; color:red;"></span>
+        <input type="password" class="form-control" placeholder="Confirm Password Code" id="confirm_passwordnewst" required/><br/>
+        <input type="submit" class="btn btn-outline-dark" id="repassconfirmst" value="Change Password" disabled/>
+        <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetpst').slideUp('fast');">
+      </form>
+    </div>
+    <div id="resetpst_four"class="repassst">
+      <div style="color:#4a4b49;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+      </svg></div><br>
+      <h4 style="color:#4a4b49;">Password Changed</h4><br>
+      <button class="btn btn-outline-dark" style="padding:6px 40px;" onclick="deleteAllCookies();location.reload();">Sign In</button>
+    </div>
+    <br><div id="checkemidst"></div><div id="checkemidst-2st"></div>
+            <div id="loader-fpst" class="spinner-border text-dark" style="visibility: hidden;"></div><br>
+             <input id="vercodestprest" style="display:none;"/>
+    </div>
+    <script src="../js/dsec/rst-st.js"></script>
+      </section>  
