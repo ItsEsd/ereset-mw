@@ -12,8 +12,8 @@
     <div id="resetpst_two"class="repassst">
       <h5 style="text-align: left;">Reset Password</h5><hr>
       <form id="repasstwost" target="hdnfrm">
-        <input type="text" class="form-control" placeholder="Verification Code" id="vercodest" oninput="verfycode();" required/><br/>
-        <input type="submit" class="btn btn-outline-dark" id="verconfirmst" value="Continue >>" onclick="$('#resetpst_two').slideUp('fast');$('#resetpst_three').slideDown('fast');" disabled/>
+        <input type="text" class="form-control" placeholder="Verification Code" id="vercodest" oninput="verfycodest();" required/><br/>
+        <input type="submit" class="btn btn-outline-dark" id="verconfirmst" value="Continue >>" onclick="$('#resetpst_two').hide();$('#resetpst_three').fadeIn('fast');" disabled/>
         <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetpst').slideUp('fast');">
       </form>
     
@@ -34,7 +34,7 @@
         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
       </svg></div><br>
       <h4 style="color:#4a4b49;">Password Changed</h4><br>
-      <button class="btn btn-outline-dark" style="padding:6px 40px;" onclick="deleteAllCookies();location.reload();">Sign In</button>
+      <button class="btn btn-outline-dark" style="padding:6px 40px;" onclick="window.open('https://student.mastrowall.com','_self')">Sign In</button>
     </div>
     <br><div id="checkemidst"></div><div id="checkemidst-2st"></div>
             <div id="loader-fpst" class="spinner-border text-dark" style="visibility: hidden;"></div><br>
