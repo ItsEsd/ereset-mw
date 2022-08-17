@@ -13,7 +13,7 @@
       <h5 style="text-align: left;">Reset Password</h5><hr>
       <form id="repasstwo" target="hdnfrm">
         <input type="text" class="form-control" placeholder="Verification Code" id="vercode" oninput="verfycode();" required/><br/>
-        <input type="submit" class="btn btn-outline-dark" id="verconfirm" value="Continue >>" onclick="$('#resetp_two').slideUp('fast');$('#resetp_three').slideDown('fast');" disabled/>
+        <input type="submit" class="btn btn-outline-dark" id="verconfirm" value="Continue >>" onclick="$('#resetp_two').fadeOut('fast');$('#resetp_three').fadeIn('fast');" disabled/>
         <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetp').slideUp('fast');">
       </form>
     
@@ -34,7 +34,7 @@
         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
       </svg></div><br>
       <h4 style="color:#0a2080;">Password Changed</h4><br>
-      <button class="btn btn-outline-dark" style="padding:6px 40px;" onclick="deleteAllCookies();location.reload();">Sign In</button>
+      <button class="btn btn-outline-dark" style="padding:6px 40px;" onclick="window.open('https://educator.mastrowall.com','_self')">Sign In</button>
     </div>
     <br><div id="checkemid"></div><div id="checkemid-2"></div>
             <div id="loader-fp" class="spinner-border text-primary"></div><br>
