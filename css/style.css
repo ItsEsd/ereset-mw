@@ -68,6 +68,12 @@ background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, .2) 25%, transpare
 background-size: 6px 6px;
 width:100%;
 }
+
+.veremfalse{
+color:black;
+font-weight: 600;
+font-size:16px;
+}
 /* ///////////////Educator////////////////// */
 
 #resetp{
@@ -152,12 +158,141 @@ background-color: #f74848;
 color:white;
 z-index: 1;
 }
-/* //////////////////////////// */
+/* ///////////////Online Test////////////////// */
+
+#rst-ont{
+display:none;
+top:60px;
+left: 0px;
+position: fixed;
+width: 100%;
+/* height:100%; */
+}
+
+.repass-ont{
+margin-top:100px;
+max-width: 400px;
+width:90%;
+min-height:200px;
+padding:20px;
+background-color: #fcbde1;
+box-shadow: 0px 2px 6px 0px #474749;
+}
+#ont-two,#ont-three,#ont-four{
+display:none;
+}
+#loader-ont{
+display: inline-block;
+left: 50%;
+top: 500px;
+z-index: 1;
+width: 30px;
+height: 30px;
+margin: -20px 0 0 -20px;
+visibility: hidden;
+}
+#succs-ont,#mailsuccs-ont{
+display: none;
+max-width: 400px;
+width:90%;
+padding:20px;
+background-color: #f74848;
+color:white;
+z-index: 1;
+}
+#emchknt{
+    text-align:left;
+    width:100%;
+    padding:10px;
+    font-size:18px;
+    padding-bottom:20px;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.438);
+    margin-bottom:20px;
+}
+#rstmailid-ont{
+    /* padding:10px; */
+    /* border: 2px solid #474749; */
+    color:#0c29cd;
+    float:right;
+    border: 1px solid #d6104c;
+    padding:0px 15px;
+    font-size: 16px;
+}
+#messagenew-ont{
+    float: right;
+    padding:4px;
+}
+/* ///////////////Exam Portal////////////////// */
+
+#rst-emp{
+    display:none;
+    top:60px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    /* height:100%; */
+    }
+    
+    .repass-emp{
+    margin-top:100px;
+    max-width: 400px;
+    width:90%;
+    min-height:200px;
+    padding:20px;
+    background-color: #fdb0f9;
+    box-shadow: 0px 2px 6px 0px #474749;
+    }
+    #emp-two,#emp-three,#emp-four{
+    display:none;
+    }
+    #loader-emp{
+    display: inline-block;
+    left: 50%;
+    top: 500px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    margin: -20px 0 0 -20px;
+    visibility: hidden;
+    }
+    #succs-emp,#mailsuccs-emp{
+    display: none;
+    max-width: 400px;
+    width:90%;
+    padding:20px;
+    background-color: #f74848;
+    color:white;
+    z-index: 1;
+    }
+    #emchknt{
+        text-align:left;
+        width:100%;
+        padding:10px;
+        font-size:18px;
+        padding-bottom:20px;
+        border-bottom: 1px solid rgba(85, 85, 85, 0.438);
+        margin-bottom:20px;
+    }
+    #rstmailid-emp{
+        /* padding:10px; */
+        /* border: 2px solid #474749; */
+        color:#0c29cd;
+        float:right;
+        border: 1px solid #d6104c;
+        padding:0px 15px;
+        font-size: 16px;
+    }
+    #messagenew-emp{
+        float: right;
+        padding:4px;
+    }
+    /* //////////////////////////// */
 #consrset{
 top:140px;
 left:0px;
 position: fixed;
 width:100%;
+padding:5px;
 }
 #creset-one{
 width:100%;
