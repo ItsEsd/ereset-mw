@@ -103,7 +103,6 @@ else{
   
   
   function ctrlqrepass(){
-  
     document.getElementById("loader-fp").style.visibility = "hidden";
     $('#resetp_three').fadeOut();
     $('#resetp_four').show();
