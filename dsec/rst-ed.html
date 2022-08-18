@@ -13,7 +13,7 @@
       <h5 style="text-align: left;">Reset Password</h5><hr>
       <form id="repasstwo" target="hdnfrm">
         <input type="text" class="form-control" placeholder="Verification Code" id="vercode" oninput="verfycode();" required/><br/>
-        <input type="submit" class="btn btn-outline-dark" id="verconfirm" value="Continue >>" onclick="$('#resetp_two').fadeOut('fast');$('#resetp_three').fadeIn('fast');" disabled/>
+        <input type="submit" class="btn btn-outline-dark" id="verconfirm" value="Continue >>" onclick="$('#resetp_two').hide();$('#resetp_three').fadeIn('fast');" disabled/>
         <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetp').slideUp('fast');">
       </form>
     
