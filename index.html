@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
 <title> e-reset | MASTROWALL</title>
 <meta charset="utf-8">
@@ -12,14 +11,13 @@
 <script src="js/assets/bootstrap.4.5.2.min.js"></script>
 <script src="js/assets/jquery.3.4.0.min.js"></script>
 <script src="js/assets/jquery.validate.min.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="images/mwalllogo.png" type="image/png" sizes="16x16">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
-
 <body ng-app="">
 <header>           
 <div id="title-head">
@@ -41,10 +39,9 @@
 <div id="creset-two">
 <button class="conbtn" id="conas-ed">Educator</button>
 <button class="conbtn" id="conas-st">Student</button>
-<button class="conbtn" id="conas-otest" disabled>Online Test</button>
-<button class="conbtn" id="conas-exmp" disabled>Exam Portal</button>
+<button class="conbtn" id="conas-otest">Online Test</button>
+<button class="conbtn" id="conas-exmp" >Exam Portal</button>
 </div>
-
 </div>
 <center><div id="info">© 2022 by MASTROWALL</div></center>
 </div>
@@ -52,7 +49,8 @@
 <section>
 <div ng-include="'dsec/rst-st.html'" id="rstst"></div>
 <div ng-include="'dsec/rst-ed.html'" id="rsted"></div>
-
+<div ng-include="'dsec/ont-verify.html'" id="rstont"></div>
+<div ng-include="'dsec/emp-verify.html'" id="rstemp"></div>
 </section>
 <script src="js/erst.js"></script>   
 </body>
