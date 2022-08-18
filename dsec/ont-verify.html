@@ -1,0 +1,40 @@
+<section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <div class="rstmodule" id="rst-ont" align="center">
+    <div class="repass-ont" id="ont-one">
+        <h5 style="text-align: left;">Reset Key</h5><hr>
+        <form id="veridont" onsubmit="return false;">
+            <input type="text" placeholder="Enter Exam ID" class="form-control" id="exidcheck-ont" required><br>
+            <input type="submit" value="Continue >>" class="btn btn-outline-dark">
+            <input type="button" class="btn btn-secondary" value="Close" onclick="$('#rst-ont').slideUp('fast')">
+        </form>
+    </div>
+    <div class="repass-ont" id="ont-two">
+       <form id="checkemont" onsubmit="return false"> <div id="emchknt">Registered Email: 
+        <span id="rstmailid-ont"></span></div>
+        <input class="form-control" id="mcheckem-ont" placeholder="Confirm Mail ID" type="email" required><br>
+        <input class="btn btn-outline-dark" type="submit" disabled value="Continue >>" id="chembtn">
+        </form>
+    </div>
+    <div class="repass-ont" id="ont-three">
+        <form id="rstpkeyont" onsubmit="return false">
+         <input class="form-control" placeholder="New Passkey" type="text" id="newpasskey-ont" required><br/>
+         <span id="messagenew-ont" style="float:right;margin-right:10px; color:red;"></span>
+         <input class="form-control" placeholder="Confirm Passkey" type="text" id="confrmpasskey-ont" required><br>
+         <input class="btn btn-outline-dark" type="submit" id="submtnps" disabled value="Submit">
+         </form>
+     </div>
+     <div id="ont-four"class="repass-ont">
+        <div style="color:#0a2080;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+          <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+          <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+        </svg></div><br>
+        <h4 style="color:#0a2080;">Passkey Changed</h4><br>
+        <button class="btn btn-outline-dark" style="padding:6px 10px;" onclick="window.open('https://mastrowall.com','_self')">Continue to MASTROWALL</button>
+      </div>
+      <br><div id="succs-ont"></div><div id="mailsuccs-ont"></div>
+              <div id="loader-ont" class="spinner-border text-primary"></div><br>
+               <input id="vrmail" style="display: none;"/>
+    </div>
+    <script src="../js/dsec/rst-ont.js"></script>
+</section>
