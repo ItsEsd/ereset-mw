@@ -73,7 +73,7 @@ $('#confrmpasskey-emp').on('keyup', function() {
     var pchk = $('#confrmpasskey-emp').val();
     var ur1 = "https://script.google.com/macros/s/";
     var ur2= "AKfycbw2t4zxCPbX6Wo7KoLfyncU4PpzDTzOC-Xq-_4xgaEWaRVf2lP9FVmF_pKVVjVZ2QgwUw";
-    var url = ur1+ur2+"/exec" + "?callback=ctrlqcngpk&exid="+exid+"&em="+mailat+"&pk="+escape(JSON.stringify(pchk))+"&action=cngpk";
+    var url = ur1+ur2+"/exec" + "?callback=ctrlqcngpkemp&exid="+exid+"&em="+mailat+"&pk="+escape(JSON.stringify(pchk))+"&action=cngpk";
     var request = jQuery.ajax({
       crossDomain: true,
       url: url,
@@ -82,7 +82,7 @@ $('#confrmpasskey-emp').on('keyup', function() {
     });
   })
 
-function ctrlqcngpk(e){
+function ctrlqcngpkemp(e){
 var cs = e.result;
 if(cs != "ID not found!"){
     document.getElementById("loader-emp").style.visibility = "hidden";
