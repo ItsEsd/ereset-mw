@@ -97,7 +97,7 @@ if(cs != "ID not found!"){
     var exid= document.getElementById('exidcheck-emp').value;
     var emidbt= "ech1"+ k1 + "-"+window.btoa(mailat);
     var exidbt= "ech0"+ k2 + "-"+window.btoa(exid);
-    var mln = "https://e-reset.mastrowall.com/?ex_reset="+exidbt+"&ex_check="+emidbt+"&nw=true";
+    var mln = "https://e-reset.mastrowall.com/?ep_reset="+exidbt+"&ep_check="+emidbt+"&n=true";
     var htm = "<html><body style='color:white;font-family:Arial, Helvetica, sans-serif;'><center><div align='center' style='border-radius:10px;background-color:#161616;padding:40px;max-width:600px;'><h2 style='color:white'>W E L C O M E</h2><h2><a target='_blank' href='https://mastrowall.com' style='text-decoration:none;'>M A S T R O W A L L</a></h2><p style='color:white;'>Reset your Online Test Passkey<br><br>Exam ID: <span style='font-size:16px;'>"
     +exid+"</span></p><a style='text-decoration:none;color:#fff444;line-height:60px;' target='_blank' href='"+mln+"'>Click Here >></a><br><p style='color:white;'>Contact: <a href='mailto:mail@mastrowall.com'>mail@mastrowall.com</a></p><h4 style='color:white;'>Thank You</h4><p style='font-size:12px;color:#cccccc;'>N.B. Do not reply to this email</p></div></center></body></html>";
       Email.send({
@@ -128,9 +128,9 @@ if(cs != "ID not found!"){
     
 var url_string = window.location.href;
 var url = new URL(url_string);
-var q = url.searchParams.get("ex_reset");
-var k = url.searchParams.get("ex_check");
-var r = url.searchParams.get("nw");
+var q = url.searchParams.get("ep_reset");
+var k = url.searchParams.get("ep_check");
+var r = url.searchParams.get("n");
 
 if(r =="true"){
     var qDi = q.split('-');
