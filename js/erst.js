@@ -4,3 +4,9 @@ $('#conas-ed').click(function(){
 $('#conas-st').click(function(){
     $('#resetpst').show();
 });
+$('#conas-otest').click(function(){
+    $('#rst-ont').show();
+});
+$('#conas-exmp').click(function(){
+    $('#rst-emp').show();
+});
