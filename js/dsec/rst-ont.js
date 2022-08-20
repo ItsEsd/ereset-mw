@@ -114,7 +114,7 @@ if(cs != "ID not found!"){
         //   $("#resetp_one").fadeOut(); ==> $("#resetp_one").hide();
            document.getElementById('chembtn').disabled = true;
           document.getElementById('mailsuccs-ont').style.display= 'block';
-          document.getElementById('mailsuccs-ont').innerHTML= 'Verification code send to your email.';
+          document.getElementById('mailsuccs-ont').innerHTML= 'Verification link send to your email.';
           setTimeout(function() {
             location.reload();
           }, 10000);
