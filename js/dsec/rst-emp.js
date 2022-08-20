@@ -103,8 +103,8 @@ if(cs != "ID not found!"){
       Email.send({
         SecureToken : "dce269d4-508e-4b89-bc50-2201fb9f60a8",
         To: mailat,
-        From: "noreply@mastrowall.com",
-          Subject: "Email Verification",
+        From: "MASTROWALL<examportal@mastrowall.com>",
+          Subject: "Exam Portal - MASTROWALL",
           Body:  htm,
       })
           .then(function (message) {
