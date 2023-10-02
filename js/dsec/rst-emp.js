@@ -1,4 +1,5 @@
 /* MASTROWALL  */
+'use strict';
 veridemp.addEventListener('submit', (event) => {
     $('#succs-emp').fadeOut();
     document.getElementById("loader-emp").style.visibility = "visible";

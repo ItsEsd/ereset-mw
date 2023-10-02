@@ -1,4 +1,5 @@
 /* MASTROWALL  */
+'use strict';
 veridont.addEventListener('submit', (event) => {
     $('#succs-ont').fadeOut();
     document.getElementById("loader-ont").style.visibility = "visible";

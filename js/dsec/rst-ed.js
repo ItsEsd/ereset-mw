@@ -1,11 +1,12 @@
   /* MASTROWALL  */
+  'use strict';
   repassone.addEventListener('submit', (event) => {
     $('#checkemid').fadeOut();
     document.getElementById("loader-fp").style.visibility = "visible";
     var mailat =  document.getElementById('mailrepass').value;
     var ur1 = "https://script.google.com/macros/s/";
 var ur2= "AKfycbzEjdgac0XtZRxKgc1Pie6viAp8cEEjcklhbNe9XIeZjnrO6CQ5TMpO1f5YLwsVRag3";
-    var url = ur1+ur2+"/exec" + "?callback=ctrlqchemid&chemid="+mailat+"&action=chedum";
+    var url = ur1+ur2+"/exec" + "?callback=ctrlqchemid&chemid="+mailat+"&action=chedum";console.log(url);
     var request = jQuery.ajax({
       crossDomain: true,
       url: url,
@@ -92,7 +93,7 @@ else{
     var pass2 = "AKfycbyQ42GIceB6CGGVo0y3gDeqD94YzQ9fMXGI2mpcmAhknYvFMQI70HPUSVOw5pPq9UdYYw";
     var newP = $('#passwordnew').val();
     var emid = $('#mailrepass').val();
-      var urlp = pass1+pass2+"/exec" + "?callback=ctrlqrepass&mailrepass=" + emid + "&passwordnew=" + newP + "&action=cuiweryuiwrnweroumorilewr-wer";
+      var urlp = pass1+pass2+"/exec" + "?callback=ctrlqrepass&mailrepass=" + emid + "&passwordnew=" + newP + "&action=cuiweryuiwrnweroumorilewr-wer";console.log(urlp);
       var request = jQuery.ajax({
         crossDomain: true,
         url: urlp,

@@ -1,4 +1,4 @@
-
+'use strict';
 var ur1 = "https://script.google.com/macros/s/";
 var ur2= "AKfycbx27EKa3hrnUL8JNXrL5lBQVLMWrv07XNXy5iBDF-04E_5_g4xwsTMKTIc3OqscvPGuXQ";
 repassonest.addEventListener('submit', (event) => {
