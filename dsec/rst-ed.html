@@ -2,7 +2,7 @@
     <div class="rstmodule" id="resetp" align="center">
     <div id="resetp_one" class="repass">
       <h5 style="text-align: left;">Reset Password</h5><hr>
-    <form id="repassone" target="hdnfrm">
+    <form id="repassone" onsubmit="event.preventDefault();">
       <input type="email" class="form-control" placeholder="Enter registered email" id="mailrepass" required/><br/>
       <input type="submit" class="btn btn-outline-dark" value="Continue >>"/>
       <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetp').slideUp('fast');">
@@ -11,7 +11,7 @@
     </div>
     <div id="resetp_two"class="repass">
       <h5 style="text-align: left;">Reset Password</h5><hr>
-      <form id="repasstwo" target="hdnfrm">
+      <form id="repasstwo" onsubmit="event.preventDefault();">
         <input type="text" class="form-control" placeholder="Verification Code" id="vercode" oninput="verfycode();" required/><br/>
         <input type="submit" class="btn btn-outline-dark" id="verconfirm" value="Continue >>" onclick="$('#resetp_two').hide();$('#resetp_three').fadeIn('fast');" disabled/>
         <input type="button" class="btn btn-secondary" value="Close"  onclick="$('#resetp').slideUp('fast');">
@@ -20,7 +20,7 @@
     </div>
     <div id="resetp_three"class="repass">
       <h5 style="text-align: left;">Reset Password</h5><hr>
-      <form id="repassthree" target="hdnfrm">
+      <form id="repassthree" onsubmit="event.preventDefault();">
         <input type="password" class="form-control" placeholder="New Password" id="passwordnew" required/><br/>
         <span id="messagenew" style="float:right;margin-right:10px; color:red;"></span>
         <input type="password" class="form-control" placeholder="Confirm Password Code" id="confirm_passwordnew" required/><br/>
