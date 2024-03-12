@@ -43,7 +43,6 @@ body {
   line-height: normal;
   margin-left: 5px;
   font-size: 25px;
-  line-height: normal;
   font-weight: 600;
 }
 #title-head img {
@@ -400,4 +399,18 @@ button:disabled {
 #info {
   margin-top: 100px;
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  #title-head img {
+    width: 30px;
+  }
+
+  #title-head a {
+    font-size: 20px;
+  }
+  .entitle {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
 }
